@@ -113,16 +113,23 @@ export function LinkBanners() {
         image="assets/banner-link-00.png"
         alt="A imersão no shave mais completa do Brasil"
         title={
-          <>
-            A imersão no shave{' '}
-            <span className="font-bold text-[var(--color-secondary)]">
-              mais
-              <br />
-              completa do Brasil
-            </span>
-          </>
+          <div className="flex flex-col items-start gap-[30px] text-left">
+            <img
+              src="assets/logo-no-shave.png"
+              alt="No Shave Experience"
+              className="h-auto w-[140px] md:w-[200px]"
+            />
+            <h3 className="text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]">
+              A imersão no shave{' '}
+              <span className="font-bold text-[var(--color-secondary)]">
+                mais
+                <br />
+                completa do Brasil
+              </span>
+            </h3>
+          </div>
         }
-        titleClassName="text-left text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]"
+        titleClassName=""
         contentMaxWidth="max-w-[66%] md:max-w-[68%]"
         ctaLabel="Garanta sua vaga"
         ctaIcon={
