@@ -114,7 +114,7 @@ export function LinkBanners() {
         contentMaxWidth="max-w-[62%] md:max-w-[60%]"
         ctaLabel="Confira no mapa"
         ctaHref={CONFIG.MAPS_URL}
-        borderColor="transparent"
+        clipToImage={false}
         delay={0.4}
       />
     </section>

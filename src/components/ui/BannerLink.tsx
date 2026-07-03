@@ -14,6 +14,7 @@ interface BannerLinkProps {
   ctaTextColor?: string
   borderColor?: string
   contentMaxWidth?: string
+  clipToImage?: boolean
   delay?: number
 }
 
@@ -30,6 +31,7 @@ export function BannerLink({
   ctaTextColor = 'var(--color-text)',
   borderColor = 'var(--color-primary)',
   contentMaxWidth = 'max-w-[62%] md:max-w-[52%]',
+  clipToImage = true,
   delay = 0,
 }: BannerLinkProps) {
   return (
@@ -42,8 +44,12 @@ export function BannerLink({
       transition={{ duration: 0.5, ease: 'easeOut', delay }}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      className="relative mx-auto block aspect-[1300/360] w-full max-w-[1200px] overflow-hidden border-2"
-      style={{ borderColor, borderRadius: '5.154% / 18.611%' }}
+      className={`relative mx-auto block aspect-[1300/360] w-full max-w-[1200px] ${clipToImage ? 'overflow-hidden border-2' : ''}`}
+      style={
+        clipToImage
+          ? { borderColor, borderRadius: '5.154% / 18.611%' }
+          : undefined
+      }
     >
       <img
         src={image}
