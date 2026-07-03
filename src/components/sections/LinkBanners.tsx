@@ -14,7 +14,7 @@ export function LinkBanners() {
             <img
               src="assets/logo-imersao-no-shave.png"
               alt="Imersão"
-              className="h-auto w-[130px] md:w-[190px]"
+              className="h-auto w-[150px] md:w-[220px]"
             />
             <h3 className="text-[13px] leading-tight font-normal text-[var(--color-text)] md:text-[36px]">
               Uma Imersão online comigo
