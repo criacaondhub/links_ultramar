@@ -75,6 +75,7 @@ export function LinkBanners() {
           </div>
         }
         titleClassName=""
+        contentMaxWidth="max-w-[70%] md:max-w-[62%]"
         ctaLabel="Quero ser um médico renomado na área"
         ctaIcon={
           <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
@@ -97,7 +98,7 @@ export function LinkBanners() {
             de Transplante Capilar
           </>
         }
-        contentMaxWidth="max-w-[70%] md:max-w-[68%]"
+        contentMaxWidth="max-w-[76%] md:max-w-[80%]"
         ctaLabel="Acesse meu site"
         ctaIcon={
           <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
@@ -117,7 +118,7 @@ export function LinkBanners() {
             congressos e mais
           </>
         }
-        contentMaxWidth="max-w-[70%] md:max-w-[68%]"
+        contentMaxWidth="max-w-[76%] md:max-w-[80%]"
         ctaLabel="Fale com minha assessoria de imprensa"
         ctaIcon={
           <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
