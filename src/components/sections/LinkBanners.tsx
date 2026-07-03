@@ -117,6 +117,7 @@ export function LinkBanners() {
 
       <BannerLink
         image="assets/banner-link-06.jpg"
+        mobileImage="assets/banner-link-06_mobile.png"
         alt="A imersão no shave mais completa do Brasil"
         title={
           <div className="flex flex-col items-start gap-[30px] text-left">
