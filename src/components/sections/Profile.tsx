@@ -3,39 +3,23 @@ import { motion } from 'framer-motion'
 export function Profile() {
   return (
     <section className="flex flex-col items-center px-2 py-6 text-center">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.92 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }}
-        className="relative flex h-28 w-28 items-center justify-center rounded-full md:h-36 md:w-36"
-        style={{
-          background: 'linear-gradient(180deg, #CB2C30 0%, #111111 100%)',
-        }}
-      >
-        <img
-          src="assets/foto-youtube-ultramar.png"
-          alt="Dr. Rafael Ultramar"
-          className="h-[92%] w-[92%] rounded-full object-cover"
-        />
-      </motion.div>
-
-      <motion.h1
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
-        className="mt-5 text-2xl font-normal text-[var(--color-text)] md:text-3xl"
-      >
-        Dr. Rafael Ultramar
-      </motion.h1>
-
       <motion.p
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-        className="mt-1 text-sm font-bold text-[var(--color-text)] md:text-base"
+        transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
+        className="mt-5 text-sm font-bold text-[var(--color-text)] md:text-base"
       >
-        @dr.rafaelultramar
+        <span className="text-[var(--color-primary)]">@</span>
+        dr.rafaelultramar
       </motion.p>
+
+      <motion.div
+        initial={{ opacity: 0, scaleX: 0 }}
+        animate={{ opacity: 1, scaleX: 1 }}
+        transition={{ duration: 0.5, ease: 'easeOut', delay: 0.45 }}
+        className="mt-4 h-px w-full max-w-[480px] md:max-w-3xl"
+        style={{ backgroundColor: 'var(--color-primary)' }}
+      />
 
       <motion.p
         initial={{ opacity: 0, y: 8 }}
