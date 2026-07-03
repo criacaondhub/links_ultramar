@@ -57,7 +57,7 @@ export function BannerLink({
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div
-        className={`relative z-10 flex h-full flex-col justify-center gap-[30px] py-6 pl-4 md:py-10 md:pl-10 ${contentMaxWidth}`}
+        className={`relative z-10 flex h-full flex-col justify-center gap-[30px] py-6 pl-[90px] md:py-10 ${contentMaxWidth}`}
       >
         <div className={titleClassName}>{title}</div>
         <span
