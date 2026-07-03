@@ -114,9 +114,12 @@ export function LinkBanners() {
         alt="A imersão no shave mais completa do Brasil"
         title={
           <>
-            A imersão no shave mais
-            <br />
-            completa do Brasil
+            A imersão no shave{' '}
+            <span className="font-bold text-[var(--color-secondary)]">
+              mais
+              <br />
+              completa do Brasil
+            </span>
           </>
         }
         titleClassName="text-left text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]"
