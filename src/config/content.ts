@@ -13,7 +13,7 @@ export const CONFIG = {
     'https://api.whatsapp.com/send/?phone=5511988392645&text=Olá%21+Quero+falar+com+a+Assessoria+de+Imprensa+do+Rafael+Ultramar.&type=phone_number&app_absent=0',
   MAPS_URL:
     'https://www.google.com/maps?q=Dr.+Rafael+Ultramar+-+Transplante+Capilar+São+Paulo+-+R.+Manuel+da+Nóbrega,+1986+-+Vila+Mariana,+São+Paulo+-+SP,+04001-006&ftid=0x94ce5954bd23034d:0xa98059c9d0e38c62&hl=pt-BR&gl=br&entry=gps&lucs=,47071704,47086688,47069508,47084304&g_ep=CAISDDYuOTYuMS4zMDU4MBgAINeCAyokLDQ3MDcxNzA0LDQ3MDg2Njg4LDQ3MDY5NTA4LDQ3MDg0MzA0QgJCUg%3D%3D&g_st=ic',
-  NO_SHAVE_IMMERSION_URL: '⚠️ PENDENTE',
+  NO_SHAVE_IMMERSION_URL: 'https://imersao.rafaelultramar.com.br',
   INSTAGRAM_URL: 'https://www.instagram.com/dr.rafaelultramar/',
   LINKEDIN_URL: 'https://www.linkedin.com/in/rafael-ultramar-b418aa268',
   SOCIAL_WHATSAPP_URL:
