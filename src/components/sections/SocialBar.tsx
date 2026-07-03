@@ -12,7 +12,7 @@ export function SocialBar() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="flex w-full max-w-[1200px] flex-col items-center gap-5 rounded-3xl border-2 px-[103px] py-6 md:gap-6 md:py-8"
+        className="flex w-fit max-w-full flex-col items-center gap-5 rounded-3xl border-2 px-[103px] py-6 md:gap-6 md:py-8"
         style={{
           borderColor: 'var(--color-primary)',
           background:
