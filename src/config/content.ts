@@ -9,6 +9,8 @@ export const CONFIG = {
   DOMAIN: '⚠️ PENDENTE',
   MENTORSHIP_URL: 'https://formacao.rafaelultramar.com.br',
   TRANSPLANT_METHOD_URL: 'https://rafaelultramar.com.br/transplante/',
+  PRESS_OFFICE_URL:
+    'https://api.whatsapp.com/send/?phone=5511988392645&text=Olá%21+Quero+falar+com+a+Assessoria+de+Imprensa+do+Rafael+Ultramar.&type=phone_number&app_absent=0',
 
   // ⚠️ PREENCHER
   COMPANY_NAME: '⚠️ PREENCHER',

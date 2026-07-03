@@ -58,14 +58,39 @@ export function LinkBanners() {
         alt="Conheça o Método Ultramar de Transplante Capilar"
         title={
           <>
-            Conheça o Método Ultramar
+            Conheça o <strong className="font-bold">Método Ultramar</strong>
             <br />
             de Transplante Capilar
           </>
         }
+        contentMaxWidth="max-w-[62%] md:max-w-[60%]"
         ctaLabel="Acesse meu site"
+        ctaIcon={
+          <ArrowRight className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
+        }
+        ctaIconPosition="right"
         ctaHref={CONFIG.TRANSPLANT_METHOD_URL}
         delay={0.2}
+      />
+
+      <BannerLink
+        image="assets/banner-link-04.png"
+        alt="Palestras, eventos exclusivos, congressos e mais"
+        title={
+          <>
+            Palestras, eventos exclusivos,
+            <br />
+            congressos e mais
+          </>
+        }
+        contentMaxWidth="max-w-[62%] md:max-w-[60%]"
+        ctaLabel="Fale com minha assessoria de imprensa"
+        ctaIcon={
+          <ArrowRight className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
+        }
+        ctaIconPosition="right"
+        ctaHref={CONFIG.PRESS_OFFICE_URL}
+        delay={0.3}
       />
     </section>
   )

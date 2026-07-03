@@ -13,6 +13,7 @@ interface BannerLinkProps {
   ctaBgColor?: string
   ctaTextColor?: string
   borderColor?: string
+  contentMaxWidth?: string
   delay?: number
 }
 
@@ -20,7 +21,7 @@ export function BannerLink({
   image,
   alt,
   title,
-  titleClassName = 'text-left text-[36px] leading-tight font-normal text-[var(--color-text)]',
+  titleClassName = 'text-left text-[13px] leading-tight font-normal text-[var(--color-text)] md:text-[36px]',
   ctaLabel,
   ctaHref,
   ctaIcon,
@@ -28,6 +29,7 @@ export function BannerLink({
   ctaBgColor = 'var(--color-primary)',
   ctaTextColor = 'var(--color-text)',
   borderColor = 'var(--color-primary)',
+  contentMaxWidth = 'max-w-[62%] md:max-w-[52%]',
   delay = 0,
 }: BannerLinkProps) {
   return (
@@ -48,7 +50,9 @@ export function BannerLink({
         alt={alt}
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="relative z-10 flex h-full max-w-[62%] flex-col justify-center gap-[30px] pl-4 md:max-w-[52%] md:pl-10">
+      <div
+        className={`relative z-10 flex h-full flex-col justify-center gap-[30px] py-6 pl-4 md:py-10 md:pl-10 ${contentMaxWidth}`}
+      >
         <div className={titleClassName}>{title}</div>
         <span
           className="inline-flex w-fit items-center gap-2 rounded-lg px-4 py-2.5 text-[8px] font-bold tracking-wide whitespace-nowrap uppercase md:gap-2.5 md:px-6 md:py-3.5 md:text-base"
