@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 export function Profile() {
   return (
-    <section className="relative z-10 flex flex-col items-center px-2 pt-0 pb-6 text-center">
+    <section className="flex flex-col items-center px-2 pt-0 pb-6 text-center">
       <motion.div
         initial={{ opacity: 0, scaleX: 0 }}
         animate={{ opacity: 1, scaleX: 1 }}

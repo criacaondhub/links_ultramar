@@ -38,4 +38,12 @@ Container máximo: **1440px**
 
 ## 4. Imagens
 
-⚠️ PENDENTE — o cliente vai fornecer os arquivos de imagem em `public/assets/`. Documentar nome do arquivo, seção de uso, posicionamento, sombras e filtros assim que forem enviados.
+| Arquivo | Seção | Uso |
+|---|---|---|
+| `Background.png` | Fundo global (`body`) | `background-size: cover`, `background-position: top center`, `no-repeat` |
+| `Banner-Hero.png` | Hero | Imagem de composição contida em `max-w-[1080px]`, sem `border-radius` |
+| `logo-rafael-ultramar.svg` | Header | Logo, sobreposta levemente à imagem do Hero |
+| `foto-youtube-ultramar.png` | — | Não utilizada atualmente (substituída pelo Banner-Hero.png) |
+| `logo-fue-ultramar.png` | LinkBanners (banner 2) | Logo dentro do card |
+| `banner-link-01.png` a `banner-link-04.png` | LinkBanners | Cards de link, `border-radius` de `5.154% / 18.611%` aplicado via CSS para acompanhar o raio nativo da arte (67px em 1300x360px) |
+| `banner-link-05.png` | LinkBanners (banner 5) | Card já vem com borda vermelha desenhada na própria arte — sem clip/borda CSS adicional (`clipToImage={false}`) |

@@ -5,7 +5,7 @@ import { CONFIG } from '@/config/content'
 
 export function LinkBanners() {
   return (
-    <section className="relative z-10 flex flex-col items-center gap-4 px-4 py-6 md:gap-6 md:px-10">
+    <section className="flex flex-col items-center gap-4 px-4 py-6 md:gap-6 md:px-10">
       <BannerLink
         image="assets/banner-link-01.png"
         alt="Faça seu Transplante Capilar comigo"

@@ -5,7 +5,7 @@ import { LinkBanners } from './components/sections/LinkBanners'
 
 function App() {
   return (
-    <main className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)]">
+    <main className="min-h-screen bg-transparent text-[var(--color-text)]">
       <Hero />
       <Header />
       <Profile />

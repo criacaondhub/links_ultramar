@@ -37,6 +37,10 @@
 body {
   font-family: var(--font-sans);
   background-color: var(--color-background);
+  background-image: url('/assets/Background.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
