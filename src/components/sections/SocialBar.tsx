@@ -7,7 +7,7 @@ import { CONFIG } from '@/config/content'
 
 export function SocialBar() {
   return (
-    <section className="flex flex-col items-center px-4 py-6 md:px-10">
+    <section className="flex flex-col items-center px-4 pt-6 pb-[80px] md:px-10">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
