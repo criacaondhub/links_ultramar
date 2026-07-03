@@ -98,7 +98,8 @@ export function LinkBanners() {
             de Transplante Capilar
           </>
         }
-        contentMaxWidth="max-w-[76%] md:max-w-[80%]"
+        titleClassName="text-left text-[13px] leading-tight font-normal text-[var(--color-text)] md:text-[26px]"
+        contentMaxWidth="max-w-[66%] md:max-w-[68%]"
         ctaLabel="Acesse meu site"
         ctaIcon={
           <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
@@ -118,7 +119,8 @@ export function LinkBanners() {
             congressos e mais
           </>
         }
-        contentMaxWidth="max-w-[76%] md:max-w-[80%]"
+        titleClassName="text-left text-[13px] leading-tight font-normal text-[var(--color-text)] md:text-[26px]"
+        contentMaxWidth="max-w-[66%] md:max-w-[68%]"
         ctaLabel="Fale com minha assessoria de imprensa"
         ctaIcon={
           <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
