@@ -36,6 +36,20 @@ export function BannerLink({
   clipToImage = true,
   delay = 0,
 }: BannerLinkProps) {
+  const aspectClasses = mobileImage
+    ? 'aspect-[788/440] md:aspect-[1300/360]'
+    : 'aspect-[1300/360]'
+
+  let clipClasses = ''
+  if (mobileImage) {
+    clipClasses = 'overflow-hidden rounded-[24px] border-2'
+    clipClasses += clipToImage
+      ? ' md:rounded-[5.154%/18.611%]'
+      : ' md:overflow-visible md:rounded-none md:border-0'
+  } else if (clipToImage) {
+    clipClasses = 'overflow-hidden border-2'
+  }
+
   return (
     <motion.a
       href={ctaHref}
@@ -46,15 +60,11 @@ export function BannerLink({
       transition={{ duration: 0.5, ease: 'easeOut', delay }}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      className={`relative mx-auto block w-full max-w-[1020px] ${mobileImage ? 'aspect-[788/440] md:aspect-[1300/360]' : 'aspect-[1300/360]'} ${clipToImage ? `overflow-hidden border-2 ${mobileImage ? 'rounded-[1.269%/2.273%] md:rounded-[5.154%/18.611%]' : ''}` : ''}`}
-      style={
-        clipToImage
-          ? {
-              borderColor,
-              borderRadius: mobileImage ? undefined : '5.154% / 18.611%',
-            }
-          : undefined
-      }
+      className={`relative mx-auto block w-full max-w-[1020px] ${aspectClasses} ${clipClasses}`}
+      style={{
+        borderColor,
+        borderRadius: !mobileImage && clipToImage ? '5.154% / 18.611%' : undefined,
+      }}
     >
       {mobileImage ? (
         <picture>
@@ -73,7 +83,11 @@ export function BannerLink({
         />
       )}
       <div
-        className={`relative z-10 flex h-full flex-col justify-center gap-[30px] py-6 pl-[90px] md:py-10 ${contentMaxWidth}`}
+        className={
+          mobileImage
+            ? `relative z-10 hidden h-full flex-col justify-center gap-[30px] py-10 pl-[90px] md:flex ${contentMaxWidth}`
+            : `relative z-10 flex h-full flex-col justify-center gap-[30px] py-6 pl-[90px] md:py-10 ${contentMaxWidth}`
+        }
       >
         <div className={titleClassName}>{title}</div>
         <span

@@ -51,6 +51,8 @@ export function LinkBanners() {
             <strong className="font-bold">Capilar</strong> comigo
           </>
         }
+        titleClassName="text-center text-[24px] leading-tight font-normal text-[var(--color-text)] md:text-left md:text-[32px]"
+        contentMaxWidth="max-w-[98%] md:max-w-[60%]"
         ctaLabel="Agendar avaliação online e gratuita"
         ctaIcon={
           <WhatsAppIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
@@ -64,20 +66,20 @@ export function LinkBanners() {
         mobileImage="assets/banner-link-02_mobile.png"
         alt="FUE Ultramar"
         title={
-          <div className="flex flex-col gap-[30px]">
+          <div className="flex flex-col items-center gap-[10px] md:items-start md:gap-[30px]">
             <img
               src="assets/logo-fue-ultramar.png"
               alt="FUE Ultramar"
-              className="h-auto w-[150px] md:w-[220px]"
+              className="h-auto w-[100px] md:w-[220px]"
             />
-            <span className="text-[14px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]">
+            <span className="text-center text-[24px] leading-tight font-normal text-[var(--color-text)] md:text-left md:text-[23px]">
               Entre para a lista de espera para
               <br />o meu programa de mentoria
             </span>
           </div>
         }
         titleClassName=""
-        contentMaxWidth="max-w-[70%] md:max-w-[62%]"
+        contentMaxWidth="max-w-[98%] md:max-w-[62%]"
         ctaLabel="Quero ser um médico renomado na área"
         ctaIcon={
           <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
@@ -101,8 +103,8 @@ export function LinkBanners() {
             de Transplante Capilar
           </>
         }
-        titleClassName="text-left text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]"
-        contentMaxWidth="max-w-[66%] md:max-w-[68%]"
+        titleClassName="text-center text-[24px] leading-tight font-normal text-[var(--color-text)] md:text-left md:text-[23px]"
+        contentMaxWidth="max-w-[98%] md:max-w-[68%]"
         ctaLabel="Acesse meu site"
         ctaIcon={
           <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
@@ -157,8 +159,8 @@ export function LinkBanners() {
             congressos e mais
           </>
         }
-        titleClassName="text-left text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]"
-        contentMaxWidth="max-w-[66%] md:max-w-[68%]"
+        titleClassName="text-center text-[24px] leading-tight font-normal text-[var(--color-text)] md:text-left md:text-[23px]"
+        contentMaxWidth="max-w-[98%] md:max-w-[68%]"
         ctaLabel="Fale com minha assessoria de imprensa"
         ctaIcon={
           <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
@@ -173,13 +175,13 @@ export function LinkBanners() {
         mobileImage="assets/banner-link-05_mobile.png"
         alt="Onde a Clínica Ultramar está localizada"
         title={
-          <div className="flex flex-col items-start gap-2 text-left md:gap-3">
-            <h3 className="text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[28px]">
+          <div className="flex flex-col items-center gap-2 text-center md:items-start md:gap-3 md:text-left">
+            <h3 className="text-[24px] leading-tight font-normal text-[var(--color-text)] md:text-[28px]">
               Onde a Clínica Ultramar
               <br />
               está localizada:
             </h3>
-            <h4 className="text-[8px] leading-snug font-normal text-[var(--color-text)] md:text-[14px]">
+            <h4 className="text-[13px] leading-snug font-normal text-[var(--color-text)] md:text-[14px]">
               R. Manuel da Nóbrega, 1986 - Vila Mariana, São Paulo
               <br />
               (Em frente ao Parque Ibirapuera - SP)
@@ -187,7 +189,7 @@ export function LinkBanners() {
           </div>
         }
         titleClassName=""
-        contentMaxWidth="max-w-[62%] md:max-w-[60%]"
+        contentMaxWidth="max-w-[92%] md:max-w-[60%]"
         ctaLabel="Confira no mapa"
         ctaHref={CONFIG.MAPS_URL}
         clipToImage={false}
