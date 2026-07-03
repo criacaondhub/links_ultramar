@@ -110,6 +110,30 @@ export function LinkBanners() {
       />
 
       <BannerLink
+        image="assets/banner-link-00.png"
+        alt="A imersão no shave mais completa do Brasil"
+        title={
+          <>
+            A imersão no shave mais
+            <br />
+            completa do Brasil
+          </>
+        }
+        titleClassName="text-left text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]"
+        contentMaxWidth="max-w-[66%] md:max-w-[68%]"
+        ctaLabel="Garanta sua vaga"
+        ctaIcon={
+          <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
+        }
+        ctaIconPosition="right"
+        ctaBgColor="var(--color-secondary)"
+        ctaTextColor="var(--color-text-on-secondary)"
+        ctaHref={CONFIG.NO_SHAVE_EXPERIENCE_URL}
+        borderColor="var(--color-secondary)"
+        delay={0.35}
+      />
+
+      <BannerLink
         image="assets/banner-link-04.png"
         alt="Palestras, eventos exclusivos, congressos e mais"
         title={

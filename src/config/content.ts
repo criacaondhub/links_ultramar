@@ -19,6 +19,7 @@ export const CONFIG = {
   SOCIAL_WHATSAPP_URL:
     'https://api.whatsapp.com/send?phone=5511988392645&text=Olá,%20vim%20pelo%20Instagram%20e%20gostaria%20de%20saber%20mais%20sobre',
   CLINICA_ULTRAMAR_URL: 'https://clinicaultramar.com.br',
+  NO_SHAVE_EXPERIENCE_URL: 'https://experience.rafaelultramar.com.br',
 
   // ⚠️ PREENCHER
   COMPANY_NAME: '⚠️ PREENCHER',
