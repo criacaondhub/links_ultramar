@@ -15,7 +15,7 @@ export function Profile() {
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-        className="mt-2 w-full max-w-[480px] text-[12px] leading-snug tracking-tight uppercase font-extrabold text-[var(--color-text)] md:max-w-[1100px] md:text-[40px] md:tracking-normal"
+        className="mt-2 w-full max-w-[480px] text-[10px] leading-snug tracking-tight uppercase font-extrabold text-[var(--color-text)] md:max-w-[1100px] md:text-[34px] md:tracking-normal"
         style={{ fontFamily: 'var(--font-condensed)' }}
       >
         Reconstruo cabelos e transformo vidas{' '}
