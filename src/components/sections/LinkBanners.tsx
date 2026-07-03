@@ -1,6 +1,6 @@
-import { ArrowRight } from 'lucide-react'
 import { BannerLink } from '@/components/ui/BannerLink'
 import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon'
+import { ArrowIcon } from '@/components/ui/ArrowIcon'
 import { CONFIG } from '@/config/content'
 
 export function LinkBanners() {
@@ -30,7 +30,7 @@ export function LinkBanners() {
         contentMaxWidth="max-w-[70%] md:max-w-[68%]"
         ctaLabel="Garanta seu ingresso!"
         ctaIcon={
-          <ArrowRight className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
+          <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
         }
         ctaIconPosition="right"
         ctaBgColor="var(--color-secondary)"
@@ -77,7 +77,7 @@ export function LinkBanners() {
         titleClassName=""
         ctaLabel="Quero ser um médico renomado na área"
         ctaIcon={
-          <ArrowRight className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
+          <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
         }
         ctaIconPosition="right"
         ctaBgColor="var(--color-secondary)"
@@ -100,7 +100,7 @@ export function LinkBanners() {
         contentMaxWidth="max-w-[70%] md:max-w-[68%]"
         ctaLabel="Acesse meu site"
         ctaIcon={
-          <ArrowRight className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
+          <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
         }
         ctaIconPosition="right"
         ctaHref={CONFIG.TRANSPLANT_METHOD_URL}
@@ -120,7 +120,7 @@ export function LinkBanners() {
         contentMaxWidth="max-w-[70%] md:max-w-[68%]"
         ctaLabel="Fale com minha assessoria de imprensa"
         ctaIcon={
-          <ArrowRight className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
+          <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
         }
         ctaIconPosition="right"
         ctaHref={CONFIG.PRESS_OFFICE_URL}
