@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import type { ReactNode } from 'react'
-import { WhatsAppIcon } from './WhatsAppIcon'
 
 interface BannerLinkProps {
   image: string
@@ -11,6 +10,8 @@ interface BannerLinkProps {
   ctaHref: string
   ctaIcon?: ReactNode
   ctaIconPosition?: 'left' | 'right'
+  ctaBgColor?: string
+  ctaTextColor?: string
   borderColor?: string
   delay?: number
 }
@@ -24,13 +25,11 @@ export function BannerLink({
   ctaHref,
   ctaIcon,
   ctaIconPosition = 'left',
+  ctaBgColor = 'var(--color-primary)',
+  ctaTextColor = 'var(--color-text)',
   borderColor = 'var(--color-primary)',
   delay = 0,
 }: BannerLinkProps) {
-  const icon = ctaIcon ?? (
-    <WhatsAppIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
-  )
-
   return (
     <motion.a
       href={ctaHref}
@@ -52,12 +51,12 @@ export function BannerLink({
       <div className="relative z-10 flex h-full max-w-[62%] flex-col justify-center gap-[30px] pl-4 md:max-w-[52%] md:pl-10">
         <div className={titleClassName}>{title}</div>
         <span
-          className="inline-flex w-fit items-center gap-2 rounded-lg px-4 py-2.5 text-[8px] font-bold tracking-wide whitespace-nowrap text-[var(--color-text)] uppercase md:gap-2.5 md:px-6 md:py-3.5 md:text-base"
-          style={{ backgroundColor: 'var(--color-primary)' }}
+          className="inline-flex w-fit items-center gap-2 rounded-lg px-4 py-2.5 text-[8px] font-bold tracking-wide whitespace-nowrap uppercase md:gap-2.5 md:px-6 md:py-3.5 md:text-base"
+          style={{ backgroundColor: ctaBgColor, color: ctaTextColor }}
         >
-          {ctaIconPosition === 'left' && icon}
+          {ctaIconPosition === 'left' && ctaIcon}
           {ctaLabel}
-          {ctaIconPosition === 'right' && icon}
+          {ctaIconPosition === 'right' && ctaIcon}
         </span>
       </div>
     </motion.a>

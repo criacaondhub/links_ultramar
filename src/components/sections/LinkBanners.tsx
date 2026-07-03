@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { BannerLink } from '@/components/ui/BannerLink'
+import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon'
 import { CONFIG } from '@/config/content'
 
 export function LinkBanners() {
@@ -16,6 +17,9 @@ export function LinkBanners() {
           </>
         }
         ctaLabel="Agendar avaliação online e gratuita"
+        ctaIcon={
+          <WhatsAppIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
+        }
         ctaHref={CONFIG.WHATSAPP_URL}
         delay={0}
       />
@@ -24,21 +28,44 @@ export function LinkBanners() {
         image="assets/banner-link-02.png"
         alt="FUE Ultramar"
         title={
-          <img
-            src="assets/logo-fue-ultramar.png"
-            alt="FUE Ultramar"
-            className="h-auto w-[130px] md:w-[220px]"
-          />
+          <div className="flex flex-col gap-[30px]">
+            <img
+              src="assets/logo-fue-ultramar.png"
+              alt="FUE Ultramar"
+              className="h-auto w-[150px] md:w-[220px]"
+            />
+            <span className="text-[16px] leading-tight font-normal text-[var(--color-text)] md:text-[26px]">
+              Entre para a lista de espera para
+              <br />o meu programa de mentoria
+            </span>
+          </div>
         }
-        titleClassName="flex items-center"
+        titleClassName=""
         ctaLabel="Quero ser um médico renomado na área"
         ctaIcon={
           <ArrowRight className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
         }
         ctaIconPosition="right"
+        ctaBgColor="var(--color-secondary)"
+        ctaTextColor="var(--color-text-on-secondary)"
         ctaHref={CONFIG.MENTORSHIP_URL}
         borderColor="var(--color-secondary)"
         delay={0.1}
+      />
+
+      <BannerLink
+        image="assets/banner-link-03.png"
+        alt="Conheça o Método Ultramar de Transplante Capilar"
+        title={
+          <>
+            Conheça o Método Ultramar
+            <br />
+            de Transplante Capilar
+          </>
+        }
+        ctaLabel="Acesse meu site"
+        ctaHref={CONFIG.TRANSPLANT_METHOD_URL}
+        delay={0.2}
       />
     </section>
   )

@@ -7,7 +7,8 @@ export const CONFIG = {
   CONTACT_EMAIL: '⚠️ PENDENTE',
   CONTACT_PHONE: '⚠️ PENDENTE',
   DOMAIN: '⚠️ PENDENTE',
-  MENTORSHIP_URL: '⚠️ PENDENTE',
+  MENTORSHIP_URL: 'https://formacao.rafaelultramar.com.br',
+  TRANSPLANT_METHOD_URL: 'https://rafaelultramar.com.br/transplante/',
 
   // ⚠️ PREENCHER
   COMPANY_NAME: '⚠️ PREENCHER',
