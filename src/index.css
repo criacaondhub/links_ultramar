@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap');
 @import "tailwindcss";
 @source "./**/*.{ts,tsx}";
 
 @theme {
-  /* Preenchido pelo Agente 01 */
+  --color-background: #000000;
+  --color-text: #ffffff;
+  --color-primary: #cb2c30;
+  --color-secondary: #68e2b3;
+  --color-text-on-secondary: #000000;
+
+  --font-sans: "Unbounded", sans-serif;
+
+  --spacing-section-x-mobile: 24px;
+  --spacing-section-x-desktop: 80px;
+  --spacing-section-y-mobile: 48px;
+  --spacing-section-y-desktop: 96px;
+  --spacing-gap-mobile: 16px;
+  --spacing-gap-desktop: 24px;
+
+  --container-max: 1440px;
 }
 
 /* ⚠️ REGRA ABSOLUTA: NUNCA coloque resets CSS fora de @layer.
