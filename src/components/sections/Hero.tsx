@@ -13,7 +13,7 @@ export function Hero() {
           speed={2}
           noiseIntensity={1.75}
           scale={0.2}
-          rotation={20}
+          rotation={-20}
         />
       </div>
 
