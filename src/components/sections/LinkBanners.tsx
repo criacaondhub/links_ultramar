@@ -8,6 +8,7 @@ export function LinkBanners() {
     <section className="flex flex-col items-center gap-4 px-4 py-6 md:gap-6 md:px-10">
       <BannerLink
         image="assets/banner-link-00.png"
+        mobileImage="assets/banner-link-00_mobile.png"
         alt="Uma Imersão online sobre cirurgias No Shave"
         title={
           <div className="flex flex-col items-start gap-[30px] text-left">
