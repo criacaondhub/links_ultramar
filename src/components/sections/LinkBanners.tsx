@@ -29,7 +29,14 @@ export function LinkBanners() {
         titleClassName=""
         contentMaxWidth="max-w-[70%] md:max-w-[68%]"
         ctaLabel="Garanta seu ingresso!"
+        ctaIcon={
+          <ArrowRight className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
+        }
+        ctaIconPosition="right"
+        ctaBgColor="var(--color-secondary)"
+        ctaTextColor="var(--color-text-on-secondary)"
         ctaHref={CONFIG.NO_SHAVE_IMMERSION_URL}
+        borderColor="var(--color-secondary)"
         delay={0}
       />
 
