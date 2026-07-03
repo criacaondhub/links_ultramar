@@ -42,6 +42,7 @@ export function LinkBanners() {
 
       <BannerLink
         image="assets/banner-link-01.png"
+        mobileImage="assets/banner-link-01_mobile.png"
         alt="Faça seu Transplante Capilar comigo"
         title={
           <>
@@ -60,6 +61,7 @@ export function LinkBanners() {
 
       <BannerLink
         image="assets/banner-link-02.png"
+        mobileImage="assets/banner-link-02_mobile.png"
         alt="FUE Ultramar"
         title={
           <div className="flex flex-col gap-[30px]">
@@ -90,6 +92,7 @@ export function LinkBanners() {
 
       <BannerLink
         image="assets/banner-link-03.png"
+        mobileImage="assets/banner-link-03_mobile.png"
         alt="Conheça o Método Ultramar de Transplante Capilar"
         title={
           <>
@@ -145,6 +148,7 @@ export function LinkBanners() {
 
       <BannerLink
         image="assets/banner-link-04.png"
+        mobileImage="assets/banner-link-04_mobile.png"
         alt="Palestras, eventos exclusivos, congressos e mais"
         title={
           <>
@@ -166,6 +170,7 @@ export function LinkBanners() {
 
       <BannerLink
         image="assets/banner-link-05.png"
+        mobileImage="assets/banner-link-05_mobile.png"
         alt="Onde a Clínica Ultramar está localizada"
         title={
           <div className="flex flex-col items-start gap-2 text-left md:gap-3">

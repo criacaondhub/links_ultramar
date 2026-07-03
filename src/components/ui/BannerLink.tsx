@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 
 interface BannerLinkProps {
   image: string
+  mobileImage?: string
   alt: string
   title: ReactNode
   titleClassName?: string
@@ -20,6 +21,7 @@ interface BannerLinkProps {
 
 export function BannerLink({
   image,
+  mobileImage,
   alt,
   title,
   titleClassName = 'text-left text-[11px] leading-tight font-normal text-[var(--color-text)] md:text-[32px]',
@@ -44,18 +46,32 @@ export function BannerLink({
       transition={{ duration: 0.5, ease: 'easeOut', delay }}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      className={`relative mx-auto block aspect-[1300/360] w-full max-w-[1020px] ${clipToImage ? 'overflow-hidden border-2' : ''}`}
+      className={`relative mx-auto block w-full max-w-[1020px] ${mobileImage ? 'aspect-[788/440] md:aspect-[1300/360]' : 'aspect-[1300/360]'} ${clipToImage ? `overflow-hidden border-2 ${mobileImage ? 'rounded-[1.269%/2.273%] md:rounded-[5.154%/18.611%]' : ''}` : ''}`}
       style={
         clipToImage
-          ? { borderColor, borderRadius: '5.154% / 18.611%' }
+          ? {
+              borderColor,
+              borderRadius: mobileImage ? undefined : '5.154% / 18.611%',
+            }
           : undefined
       }
     >
-      <img
-        src={image}
-        alt={alt}
-        className="absolute inset-0 h-full w-full object-cover"
-      />
+      {mobileImage ? (
+        <picture>
+          <source media="(max-width: 767px)" srcSet={mobileImage} />
+          <img
+            src={image}
+            alt={alt}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </picture>
+      ) : (
+        <img
+          src={image}
+          alt={alt}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
       <div
         className={`relative z-10 flex h-full flex-col justify-center gap-[30px] py-6 pl-[90px] md:py-10 ${contentMaxWidth}`}
       >
