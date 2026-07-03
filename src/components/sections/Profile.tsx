@@ -2,22 +2,12 @@ import { motion } from 'framer-motion'
 
 export function Profile() {
   return (
-    <section className="flex flex-col items-center px-2 py-6 text-center">
-      <motion.p
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
-        className="mt-5 text-sm font-bold text-[var(--color-text)] md:text-base"
-      >
-        <span className="text-[var(--color-primary)]">@</span>
-        dr.rafaelultramar
-      </motion.p>
-
+    <section className="flex flex-col items-center px-2 pt-0 pb-6 text-center">
       <motion.div
         initial={{ opacity: 0, scaleX: 0 }}
         animate={{ opacity: 1, scaleX: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut', delay: 0.45 }}
-        className="mt-4 h-px w-full max-w-[480px] md:max-w-3xl"
+        className="mt-6 h-px w-full max-w-[480px] md:max-w-3xl"
         style={{ backgroundColor: 'var(--color-primary)' }}
       />
 
