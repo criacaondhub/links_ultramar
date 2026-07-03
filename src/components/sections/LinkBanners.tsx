@@ -92,6 +92,31 @@ export function LinkBanners() {
         ctaHref={CONFIG.PRESS_OFFICE_URL}
         delay={0.3}
       />
+
+      <BannerLink
+        image="assets/banner-link-05.png"
+        alt="Onde a Clínica Ultramar está localizada"
+        title={
+          <div className="flex flex-col items-start gap-2 text-left md:gap-3">
+            <h3 className="text-[13px] leading-tight font-normal text-[var(--color-text)] md:text-[32px]">
+              Onde a Clínica Ultramar
+              <br />
+              está localizada:
+            </h3>
+            <h4 className="text-[9px] leading-snug font-normal text-[var(--color-text)] md:text-[16px]">
+              R. Manuel da Nóbrega, 1986 - Vila Mariana, São Paulo
+              <br />
+              (Em frente ao Parque Ibirapuera - SP)
+            </h4>
+          </div>
+        }
+        titleClassName=""
+        contentMaxWidth="max-w-[62%] md:max-w-[60%]"
+        ctaLabel="Confira no mapa"
+        ctaHref={CONFIG.MAPS_URL}
+        borderColor="transparent"
+        delay={0.4}
+      />
     </section>
   )
 }
