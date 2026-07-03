@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 export function Header() {
   return (
-    <header className="relative z-10 -mt-6 flex flex-col items-center gap-[40px] px-6 pb-0 md:-mt-10">
+    <header className="relative z-10 -mt-6 flex flex-col items-center gap-[20px] px-6 pb-0 md:-mt-10">
       <motion.img
         initial={{ opacity: 0, y: -12 }}
         animate={{ opacity: 1, y: 0 }}

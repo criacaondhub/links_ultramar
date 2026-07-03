@@ -14,13 +14,16 @@
 
 | Token | Valor |
 |---|---|
-| Fonte | Unbounded |
+| Fonte principal | Unbounded |
 | Peso | Regular (400) / Bold (700) — Bold adicionado para @handle e frase de credibilidade |
 | Fonte (variável CSS) | `--font-sans: "Unbounded", sans-serif;` |
+| Fonte secundária | Sofia Sans Condensed — usada apenas no texto de credibilidade ("Reconstruo cabelos..."), em caixa alta |
+| Fonte secundária (variável CSS) | `--font-condensed: "Sofia Sans Condensed", sans-serif;` |
 
 Import Google Fonts:
 ```
 https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap
+https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;700;800&display=swap
 ```
 
 ## 3. Espaçamentos e Grid
