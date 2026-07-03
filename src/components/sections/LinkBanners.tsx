@@ -117,7 +117,7 @@ export function LinkBanners() {
             <img
               src="assets/logo-no-shave.png"
               alt="No Shave Experience"
-              className="h-auto w-[140px] md:w-[200px]"
+              className="h-auto w-[180px] md:w-[260px]"
             />
             <h3 className="text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]">
               A imersão no shave{' '}
