@@ -16,7 +16,7 @@ export function LinkBanners() {
               alt="Imersão"
               className="h-auto w-[190px] md:w-[280px]"
             />
-            <h3 className="text-[13px] leading-tight font-normal text-[var(--color-text)] md:text-[36px]">
+            <h3 className="text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[32px]">
               Uma Imersão online comigo
               <br />
               sobre cirurgias{' '}
@@ -68,7 +68,7 @@ export function LinkBanners() {
               alt="FUE Ultramar"
               className="h-auto w-[150px] md:w-[220px]"
             />
-            <span className="text-[16px] leading-tight font-normal text-[var(--color-text)] md:text-[26px]">
+            <span className="text-[14px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]">
               Entre para a lista de espera para
               <br />o meu programa de mentoria
             </span>
@@ -98,7 +98,7 @@ export function LinkBanners() {
             de Transplante Capilar
           </>
         }
-        titleClassName="text-left text-[13px] leading-tight font-normal text-[var(--color-text)] md:text-[26px]"
+        titleClassName="text-left text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]"
         contentMaxWidth="max-w-[66%] md:max-w-[68%]"
         ctaLabel="Acesse meu site"
         ctaIcon={
@@ -119,7 +119,7 @@ export function LinkBanners() {
             congressos e mais
           </>
         }
-        titleClassName="text-left text-[13px] leading-tight font-normal text-[var(--color-text)] md:text-[26px]"
+        titleClassName="text-left text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]"
         contentMaxWidth="max-w-[66%] md:max-w-[68%]"
         ctaLabel="Fale com minha assessoria de imprensa"
         ctaIcon={
@@ -135,12 +135,12 @@ export function LinkBanners() {
         alt="Onde a Clínica Ultramar está localizada"
         title={
           <div className="flex flex-col items-start gap-2 text-left md:gap-3">
-            <h3 className="text-[13px] leading-tight font-normal text-[var(--color-text)] md:text-[32px]">
+            <h3 className="text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[28px]">
               Onde a Clínica Ultramar
               <br />
               está localizada:
             </h3>
-            <h4 className="text-[9px] leading-snug font-normal text-[var(--color-text)] md:text-[16px]">
+            <h4 className="text-[8px] leading-snug font-normal text-[var(--color-text)] md:text-[14px]">
               R. Manuel da Nóbrega, 1986 - Vila Mariana, São Paulo
               <br />
               (Em frente ao Parque Ibirapuera - SP)

@@ -22,7 +22,7 @@ export function BannerLink({
   image,
   alt,
   title,
-  titleClassName = 'text-left text-[13px] leading-tight font-normal text-[var(--color-text)] md:text-[36px]',
+  titleClassName = 'text-left text-[11px] leading-tight font-normal text-[var(--color-text)] md:text-[32px]',
   ctaLabel,
   ctaHref,
   ctaIcon,
@@ -61,7 +61,7 @@ export function BannerLink({
       >
         <div className={titleClassName}>{title}</div>
         <span
-          className="inline-flex w-fit items-center gap-2 rounded-lg px-4 py-2.5 text-[8px] font-bold tracking-wide whitespace-nowrap uppercase md:gap-2.5 md:px-6 md:py-3.5 md:text-base"
+          className="inline-flex w-fit items-center gap-2 rounded-lg px-4 py-2.5 text-[7px] font-bold tracking-wide whitespace-nowrap uppercase md:gap-2.5 md:px-5 md:py-3 md:text-sm"
           style={{ backgroundColor: ctaBgColor, color: ctaTextColor }}
         >
           {ctaIconPosition === 'left' && ctaIcon}
