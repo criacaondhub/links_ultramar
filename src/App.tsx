@@ -3,6 +3,7 @@ import { Header } from './components/sections/Header'
 import { Profile } from './components/sections/Profile'
 import { LinkBanners } from './components/sections/LinkBanners'
 import { SocialBar } from './components/sections/SocialBar'
+import { FloatingWhatsAppButton } from './components/ui/FloatingWhatsAppButton'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <LinkBanners />
       <SocialBar />
       {/* Próximas seções serão adicionadas aqui conforme aprovadas */}
+      <FloatingWhatsAppButton />
     </main>
   )
 }

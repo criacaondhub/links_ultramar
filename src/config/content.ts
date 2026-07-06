@@ -4,6 +4,8 @@ export const CONFIG = {
   WHATSAPP_URL:
     'https://api.whatsapp.com/send/?phone=5511988392645&text=Olá%21+Vim+pelo+Instagram+e+quero+agendar+uma+consulta+com+o+Dr.+Rafael+Ultramar.&type=phone_number&app_absent=0',
   WHATSAPP_NUMBER: '5511988392645',
+  SCHEDULE_WHATSAPP_URL:
+    'https://api.whatsapp.com/send/?phone=5511988392645&text=Olá%21+Gostaria+de+agendar+uma+consultoria+capilar+ou+tirar+dúvidas&type=phone_number&app_absent=0',
   CONTACT_EMAIL: '⚠️ PENDENTE',
   CONTACT_PHONE: '⚠️ PENDENTE',
   DOMAIN: '⚠️ PENDENTE',
