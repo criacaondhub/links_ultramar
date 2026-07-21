@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://links.rafaelultramar.com.br/sitemap.xml
+Sitemap: https://rafaelultramar.com.br/sitemap.xml

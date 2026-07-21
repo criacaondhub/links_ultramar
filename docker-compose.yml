@@ -14,7 +14,7 @@ services:
           - node.role == manager
       labels:
         - traefik.enable=true
-        - traefik.http.routers.links-ultramar.rule=Host(`links.rafaelultramar.com.br`)
+        - traefik.http.routers.links-ultramar.rule=Host(`rafaelultramar.com.br`)
         - traefik.http.routers.links-ultramar.entrypoints=websecure
         - traefik.http.routers.links-ultramar.tls.certresolver=letsencryptresolver
         - traefik.http.routers.links-ultramar.service=links-ultramar
