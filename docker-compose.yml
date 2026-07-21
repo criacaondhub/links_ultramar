@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+  links-ultramar:
+    image: links-ultramar:latest
+    build: .
+    networks:
+      - UltramarNet
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.links-ultramar.rule=Host(`links.rafaelultramar.com.br`)
+        - traefik.http.routers.links-ultramar.entrypoints=websecure
+        - traefik.http.routers.links-ultramar.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.links-ultramar.service=links-ultramar
+        - traefik.http.services.links-ultramar.loadbalancer.server.port=80
+        - traefik.http.services.links-ultramar.loadbalancer.passHostHeader=true
+
+networks:
+  UltramarNet:
+    name: UltramarNet
+    external: true
