@@ -1,0 +1,1 @@
+git pull origin main && docker build -t links-ultramar:latest . && docker stack deploy -c docker-compose.yml links-ultramar && docker service update --image links-ultramar:latest --force links-ultramar_links-ultramar
