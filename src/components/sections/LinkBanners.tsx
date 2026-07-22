@@ -58,7 +58,7 @@ export function LinkBanners() {
         delay={0.1}
       />
 
-      <BannerLink
+      {/* <BannerLink
         image="assets/banner-link-00.png"
         mobileImage="assets/banner-link-00_mobile.png"
         alt="Uma Imersão online sobre cirurgias No Shave"
@@ -91,7 +91,7 @@ export function LinkBanners() {
         ctaHref={CONFIG.NO_SHAVE_IMMERSION_URL}
         borderColor="var(--color-secondary)"
         delay={0.2}
-      />
+      /> */}
 
       <BannerLink
         image="assets/banner-link-03.png"
