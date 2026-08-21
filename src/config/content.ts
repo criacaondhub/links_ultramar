@@ -9,7 +9,7 @@ export const CONFIG = {
   CONTACT_EMAIL: '⚠️ PENDENTE',
   CONTACT_PHONE: '⚠️ PENDENTE',
   DOMAIN: '⚠️ PENDENTE',
-  MENTORSHIP_URL: 'https://formacao.rafaelultramar.com.br',
+  MENTORSHIP_URL: 'https://formacao.rafaelultramar.com.br/fila-de-espera/',
   TRANSPLANT_METHOD_URL: 'https://transplante.rafaelultramar.com.br',
   PRESS_OFFICE_URL:
     'https://api.whatsapp.com/send/?phone=5511988392645&text=Olá%21+Quero+falar+com+a+Assessoria+de+Imprensa+do+Rafael+Ultramar.&type=phone_number&app_absent=0',
