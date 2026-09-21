@@ -13,6 +13,7 @@ interface BannerLinkProps {
   ctaIconPosition?: 'left' | 'right'
   ctaBgColor?: string
   ctaTextColor?: string
+  ctaBoxShadow?: string
   borderColor?: string
   contentMaxWidth?: string
   clipToImage?: boolean
@@ -31,6 +32,7 @@ export function BannerLink({
   ctaIconPosition = 'left',
   ctaBgColor = 'var(--color-primary)',
   ctaTextColor = 'var(--color-text)',
+  ctaBoxShadow,
   borderColor = 'var(--color-primary)',
   contentMaxWidth = 'max-w-[68%] md:max-w-[60%]',
   clipToImage = true,
@@ -92,7 +94,7 @@ export function BannerLink({
         <div className={titleClassName}>{title}</div>
         <span
           className="inline-flex w-fit items-center gap-2 rounded-lg px-4 py-2.5 text-[7px] font-bold tracking-wide whitespace-nowrap uppercase md:gap-2.5 md:px-5 md:py-3 md:text-sm"
-          style={{ backgroundColor: ctaBgColor, color: ctaTextColor }}
+          style={{ background: ctaBgColor, color: ctaTextColor, boxShadow: ctaBoxShadow }}
         >
           {ctaIconPosition === 'left' && ctaIcon}
           {ctaLabel}

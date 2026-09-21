@@ -7,6 +7,42 @@ export function LinkBanners() {
   return (
     <section className="flex flex-col items-center gap-4 px-4 py-6 md:gap-6 md:px-10">
       <BannerLink
+        image="assets/banner-link-06.jpg"
+        mobileImage="assets/banner-link-06_mobile.png"
+        alt="A imersão no shave mais completa do Brasil"
+        title={
+          <div className="flex flex-col items-start gap-[10px] text-left md:gap-[14px]">
+            <img
+              src="assets/logo-no-shave.png"
+              alt="No Shave Experience"
+              className="h-auto w-[150px] md:w-[210px]"
+            />
+            <span className="rounded-md bg-[#098EFE] px-3 py-1 text-[8px] leading-tight font-bold tracking-wide whitespace-nowrap text-white uppercase md:px-3.5 md:py-1.5 md:text-[12px]">
+              Vagas abertas | 15 e 16 de outubro
+            </span>
+            <h3 className="text-[11px] leading-tight font-bold text-[var(--color-text)] md:text-[15px]">
+              Imersão completa sobre cirurgias No Shave
+              <br />
+              comigo, na minha clínica, em 2 dias inteiros!
+            </h3>
+          </div>
+        }
+        titleClassName=""
+        contentMaxWidth="max-w-[66%] md:max-w-[64%]"
+        ctaLabel="Saiba mais!"
+        ctaIcon={
+          <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
+        }
+        ctaIconPosition="right"
+        ctaBgColor="linear-gradient(135deg, #0165EA 0%, #01116A 100%)"
+        ctaTextColor="#ffffff"
+        ctaBoxShadow="0 0 18px rgba(1, 101, 234, 0.45), 0 0 36px rgba(1, 101, 234, 0.2)"
+        ctaHref={CONFIG.NO_SHAVE_EXPERIENCE_URL}
+        borderColor="#0165EA"
+        delay={0}
+      />
+
+      <BannerLink
         image="assets/banner-link-02.png"
         mobileImage="assets/banner-link-02_mobile.png"
         alt="FUE Ultramar"
@@ -34,7 +70,7 @@ export function LinkBanners() {
         ctaTextColor="var(--color-text-on-secondary)"
         ctaHref={CONFIG.MENTORSHIP_URL}
         borderColor="var(--color-secondary)"
-        delay={0}
+        delay={0.1}
       />
 
       <BannerLink
@@ -55,7 +91,7 @@ export function LinkBanners() {
           <WhatsAppIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
         }
         ctaHref={CONFIG.WHATSAPP_URL}
-        delay={0.1}
+        delay={0.2}
       />
 
       {/* <BannerLink
@@ -113,41 +149,6 @@ export function LinkBanners() {
         ctaIconPosition="right"
         ctaHref={CONFIG.TRANSPLANT_METHOD_URL}
         delay={0.3}
-      />
-
-      <BannerLink
-        image="assets/banner-link-06.jpg"
-        mobileImage="assets/banner-link-06_mobile.png"
-        alt="A imersão no shave mais completa do Brasil"
-        title={
-          <div className="flex flex-col items-start gap-[30px] text-left">
-            <img
-              src="assets/logo-no-shave.png"
-              alt="No Shave Experience"
-              className="h-auto w-[180px] md:w-[260px]"
-            />
-            <h3 className="text-[12px] leading-tight font-normal text-[var(--color-text)] md:text-[23px]">
-              A imersão no shave{' '}
-              <span className="font-bold text-[var(--color-secondary)]">
-                mais
-                <br />
-                completa do Brasil
-              </span>
-            </h3>
-          </div>
-        }
-        titleClassName=""
-        contentMaxWidth="max-w-[66%] md:max-w-[68%]"
-        ctaLabel="Garanta sua vaga"
-        ctaIcon={
-          <ArrowIcon className="h-3.5 w-3.5 shrink-0 md:h-5 md:w-5" />
-        }
-        ctaIconPosition="right"
-        ctaBgColor="var(--color-secondary)"
-        ctaTextColor="var(--color-text-on-secondary)"
-        ctaHref={CONFIG.NO_SHAVE_EXPERIENCE_URL}
-        borderColor="var(--color-secondary)"
-        delay={0.35}
       />
 
       <BannerLink
